@@ -1,6 +1,51 @@
-body
-  padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
 
-a
-  color: #00B7FF
+// color variables
+$white: #ffffff
+$grey: #cccccc
+$dark: #262626
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-size: 14px
+
+body
+  background-color: $white
+
+a,
+button
+  cursor: pointer
+
+.header
+  width: 100%
+  height: 100vh
+  background-color: $dark
+  position: relative
+
+  &-container
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    color: $white
+    letter-spacing: 0.5rem
+
+    header
+      font-size: 5rem
+
+    button
+      border: 1px solid $white
+      border-radius: 3px
+      height: 70px
+      padding: 0 20px
+      background: transparent
+      color: $white
+      margin-top: 50px
+      transition: all .3s ease-in-out
+
+      &:hover
+        color: $dark
+        background-color: $white
+      
