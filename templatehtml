@@ -21,3 +21,18 @@ function myFunction() {
 <img src="https://s3.amazonaws.com/testcha/download.jpeg"></div>
 </body>
 </html>
+
+<!--- and the python function does something like this
+
+def lambda_handler(event, context):
+    print("In lambda handler")
+    
+    resp = {
+        "statusCode": 200,
+        "headers": {
+            "Access-Control-Allow-Origin": "*",
+        },
+        "body": "You be goat! Why dont you listen, is this how you treat Konga devops"
+    }
+    
+    return resp
